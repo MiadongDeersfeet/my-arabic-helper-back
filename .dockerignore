@@ -1,0 +1,15 @@
+# Git / IDE
+.git
+.gitignore
+.idea
+
+# Build outputs
+target
+
+# Local env / secrets
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
