@@ -1,0 +1,13 @@
+package com.arabichelper.backend;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+// 백엔드 애플리케이션 진입점
+@SpringBootApplication
+public class ArabicHelperApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(ArabicHelperApplication.class, args);
+    }
+}

@@ -1,0 +1,16 @@
+# Maven / Java build outputs
+target/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Keep secrets/config local only
+src/main/resources/application.yml
+
+# IDE / OS / logs
+.idea/
+.DS_Store
+Thumbs.db
+*.log
