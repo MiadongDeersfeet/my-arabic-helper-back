@@ -17,8 +17,11 @@ public class JwtProvider {
     private final SecretKey secretKey;
     private final long expirationMs;
 
-    public JwtProvider(@Value("${app.jwt.secret}") String jwtSecret,
-                       @Value("${app.jwt.expiration-ms}") long expirationMs) {
+    public JwtProvider(
+            @Value("${app.jwt.secret:${JWT_SECRET:change-this-to-a-long-secret-key-at-least-32chars}}")
+            String jwtSecret,
+            @Value("${app.jwt.expiration-ms:${JWT_EXPIRATION_MS:86400000}}")
+            long expirationMs) {
         // HS256 키는 충분한 길이가 필요하므로 secret 최소 32자 이상 권장
         this.secretKey = Keys.hmacShaKeyFor(jwtSecret.getBytes(StandardCharsets.UTF_8));
         this.expirationMs = expirationMs;

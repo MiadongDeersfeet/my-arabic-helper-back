@@ -9,7 +9,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
 
-    @Value("${app.cors.allowed-origins}")
+    // application.yml가 없어도 Render 환경변수(APP_CORS_ALLOWED_ORIGINS/ALLOWED_ORIGINS)로 동작하도록 기본값 제공
+    @Value("${app.cors.allowed-origins:${APP_CORS_ALLOWED_ORIGINS:${ALLOWED_ORIGINS:http://localhost:5173}}}")
     private String[] allowedOrigins;
 
     @Override
