@@ -1,0 +1,82 @@
+[
+  {
+    "_id": { "$oid": "6800a1000000000000000001" },
+    "cardNo": 1,
+    "categoryId": "6800a0000000000000000001",
+    "categoryName": "기초회화",
+    "kor": {
+      "text": "안녕하세요",
+      "audioUrl": "/audio/kor/hello-ko.mp3"
+    },
+    "arb": {
+      "text": "السلام عليكم",
+      "audioUrl": "/audio/arb/hello-ar.mp3"
+    },
+    "flow": {
+      "countdownSec": 10
+    },
+    "active": true,
+    "createdAt": { "$date": "2026-04-16T00:00:00.000Z" },
+    "updatedAt": { "$date": "2026-04-16T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "6800a1000000000000000002" },
+    "cardNo": 2,
+    "categoryId": "6800a0000000000000000001",
+    "categoryName": "기초회화",
+    "kor": {
+      "text": "잘 지냈어요?",
+      "audioUrl": "/audio/kor/how-are-you-ko.mp3"
+    },
+    "arb": {
+      "text": "كيف حالك؟",
+      "audioUrl": "/audio/arb/how-are-you-ar.mp3"
+    },
+    "flow": {
+      "countdownSec": 10
+    },
+    "active": true,
+    "createdAt": { "$date": "2026-04-16T00:00:00.000Z" },
+    "updatedAt": { "$date": "2026-04-16T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "6800a1000000000000000003" },
+    "cardNo": 1,
+    "categoryId": "6800a0000000000000000002",
+    "categoryName": "상황회화",
+    "kor": {
+      "text": "메뉴판 좀 주세요",
+      "audioUrl": "/audio/kor/menu-please-ko.mp3"
+    },
+    "arb": {
+      "text": "من فضلك أعطني قائمة الطعام",
+      "audioUrl": "/audio/arb/menu-please-ar.mp3"
+    },
+    "flow": {
+      "countdownSec": 10
+    },
+    "active": true,
+    "createdAt": { "$date": "2026-04-16T00:00:00.000Z" },
+    "updatedAt": { "$date": "2026-04-16T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "6800a1000000000000000004" },
+    "cardNo": 2,
+    "categoryId": "6800a0000000000000000002",
+    "categoryName": "상황회화",
+    "kor": {
+      "text": "이거 얼마예요?",
+      "audioUrl": "/audio/kor/how-much-ko.mp3"
+    },
+    "arb": {
+      "text": "بكم هذا؟",
+      "audioUrl": "/audio/arb/how-much-ar.mp3"
+    },
+    "flow": {
+      "countdownSec": 10
+    },
+    "active": true,
+    "createdAt": { "$date": "2026-04-16T00:00:00.000Z" },
+    "updatedAt": { "$date": "2026-04-16T00:00:00.000Z" }
+  }
+]

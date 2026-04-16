@@ -1,0 +1,20 @@
+[
+  {
+    "_id": { "$oid": "6800a0000000000000000001" },
+    "name": "기초회화",
+    "description": "기초 인사와 일상 표현",
+    "active": true,
+    "sortOrder": 1,
+    "createdAt": { "$date": "2026-04-16T00:00:00.000Z" },
+    "updatedAt": { "$date": "2026-04-16T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "6800a0000000000000000002" },
+    "name": "상황회화",
+    "description": "식당, 길찾기, 쇼핑 표현",
+    "active": true,
+    "sortOrder": 2,
+    "createdAt": { "$date": "2026-04-16T00:00:00.000Z" },
+    "updatedAt": { "$date": "2026-04-16T00:00:00.000Z" }
+  }
+]

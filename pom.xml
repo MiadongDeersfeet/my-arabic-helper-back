@@ -75,6 +75,13 @@
             <optional>true</optional>
         </dependency>
 
+        <!-- Cloudinary 업로드 SDK -->
+        <dependency>
+            <groupId>com.cloudinary</groupId>
+            <artifactId>cloudinary-http44</artifactId>
+            <version>1.39.0</version>
+        </dependency>
+
         <!-- 테스트용 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

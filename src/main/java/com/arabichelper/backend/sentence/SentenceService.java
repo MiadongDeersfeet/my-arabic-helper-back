@@ -29,16 +29,19 @@ public class SentenceService {
     public Sentence create(Sentence sentence) {
         sentence.setCreatedAt(Instant.now());
         sentence.setUpdatedAt(Instant.now());
+        if (sentence.getIsActive() == null) {
+            sentence.setIsActive(true);
+        }
         return sentenceRepository.save(sentence);
     }
 
     public Sentence update(String id, Sentence request) {
         Sentence existing = findById(id);
 
-        existing.setArabic(request.getArabic());
-        existing.setTranslation(request.getTranslation());
-        existing.setPronunciation(request.getPronunciation());
-        existing.setTopic(request.getTopic());
+        existing.setCategory(request.getCategory());
+        existing.setArabicText(request.getArabicText());
+        existing.setKoreanText(request.getKoreanText());
+        existing.setIsActive(request.getIsActive() == null ? true : request.getIsActive());
         existing.setUpdatedAt(Instant.now());
 
         return sentenceRepository.save(existing);
@@ -49,7 +52,7 @@ public class SentenceService {
     }
 
     public List<Sentence> randomSentences(int size) {
-        List<Sentence> allSentences = sentenceRepository.findAll();
+        List<Sentence> allSentences = sentenceRepository.findAllByIsActiveTrue();
         Collections.shuffle(allSentences);
         return allSentences.stream().limit(size).toList();
     }

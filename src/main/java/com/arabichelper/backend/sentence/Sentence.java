@@ -15,19 +15,20 @@ public class Sentence {
     @Id
     private String id;
 
+    // 카테고리(예: 10과)
+    @NotBlank(message = "category 값은 필수입니다.")
+    private String category;
+
     // 아랍어 문장
-    @NotBlank(message = "arabic 값은 필수입니다.")
-    private String arabic;
+    @NotBlank(message = "arabicText 값은 필수입니다.")
+    private String arabicText;
 
     // 해석(한국어)
-    @NotBlank(message = "translation 값은 필수입니다.")
-    private String translation;
+    @NotBlank(message = "koreanText 값은 필수입니다.")
+    private String koreanText;
 
-    // 발음
-    private String pronunciation;
-
-    // 문맥/태그 (예: 인사, 식당, 여행)
-    private String topic;
+    // 활성화 여부(학습 출제 대상 여부)
+    private Boolean isActive;
 
     private Instant createdAt;
     private Instant updatedAt;
